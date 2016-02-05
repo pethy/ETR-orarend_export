@@ -35,9 +35,9 @@ $('.d_list').each(function() {
 });
 $('#login_lablec').append('<div id=text_to_file></div>');
 $('#text_to_file').hide();
-//szoveg = szoveg.replace(/<br>/,'\n');
-//szoveg = szoveg.replace(/<b>/,'');
-//szoveg = szoveg.replace(/<\/b>/,'');
+szoveg = szoveg.replace(/<br>/g,'%0D%0A');
+szoveg = szoveg.replace(/<b>/g,'');
+szoveg = szoveg.replace(/<\/b>/g,'');
 $('#text_to_file').html(szoveg);
 $('.d_list').hide();
 var a = document.body.appendChild(
